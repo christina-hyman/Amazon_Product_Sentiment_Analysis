@@ -68,7 +68,7 @@ filtered_df = filter_tokens(df, 'Text')
 The Balanced Dataset and the Sample Dataset each contain 1500 reviews.<br>
 
 **Balanced Dataset**<br>
-The balanced dataset includes 250 reviews each for 1-, 2-, 4-, and 5-star ratings, along with 500 reviews for 3-star ratings.
+The balanced dataset includes 250 reviews each for 1-, 2-, 4-, and 5-star ratings and 500 reviews for 3-star ratings.
 ```python
 df1 = filtered_df[filtered_df['Score']==1].sample(250, random_state=42)
 df2 = filtered_df[filtered_df['Score']==2].sample(250, random_state=42)
